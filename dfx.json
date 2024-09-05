@@ -1,0 +1,19 @@
+{
+  "canisters": {
+    "atiman_frontend": {
+      "entrypoint": "src/index.html",
+      "source": [
+        "src/atiman_frontend/dist"
+      ],
+      "type": "assets"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}

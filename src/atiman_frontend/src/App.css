@@ -1,0 +1,275 @@
+body{
+  min-height:100vh;
+  height:auto;
+  margin:0;
+  padding:0;
+}
+/* Nav bar */
+li{
+  list-style-type:none;
+}
+.navItem:hover{
+  cursor:pointer;
+  border-bottom: 3px solid rgb(12, 20, 253);
+
+}
+.mainNav{
+  position:fixed;
+z-index:999999;
+  top:0;
+  left:0;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+ width:100%;
+ background-color: #fff;
+ box-shadow:0 5px 2px #fff;
+}
+ul{
+  display:flex;
+  justify-content:space-between;
+  width:50%;
+}
+.btn {
+  padding:8px 10px;
+  border:none;
+  border-radius:4px;
+
+}
+.lg{
+  padding:10px 20px !important;
+}
+.xl{
+  padding:15px 40px !important;
+}
+.blue
+{
+  margin-left:20px;
+  background-color:rgb(12, 20, 253);
+  color:#fff;
+  box-shadow:0px 2px 5px rgba(12,20,253,0.9);
+}
+button{
+  cursor: pointer;
+}
+.white
+{
+  background-color:#fff;
+  color: rgb(19,4,134);
+  transition:0.3s;
+  border-radius:8px !important;
+  font-weight: 600;
+
+}
+.white:hover{
+  background-color:rgb(19, 4, 134);
+  color:#fff;
+ 
+}
+.blueOutline{
+  
+  background-color:#fff;
+  border:1px solid rgb(12, 20, 253);
+  color:rgb(12, 20, 253);
+  border-radius:5px;
+  transition:0.3s;
+  
+
+}
+.blueOutline:hover{
+  background-color:rgb(12, 20, 253);
+  color:#fff;
+
+}
+.navButton
+{
+margin-right:40px;
+ display:none;
+
+}
+.menu{
+  display:block;
+  margin-right:60px;
+  height:70%;
+}
+.navItem
+{
+  display:none;
+}
+
+/* Hero section */
+.heroSection{
+  display: flex;
+  justify-content:space-around;
+  align-items:center;
+  flex-direction:column;
+  margin-top:70px;
+  background-color:rgb(252, 252, 253);
+  height:50vh;
+  box-sizing: border-box;
+}
+.rightSection{
+  text-align: center;
+  height:50%;
+  
+}
+.leftSection{
+  height:100%;
+  width:50%;
+}
+.leftSection img{
+  height:100%;
+  min-width:70%;
+  width:100%;
+  margin:0 auto;
+  display:none;
+  
+}
+.download{
+  margin-top:20px;
+  padding:5px 15px;
+  border:none;
+  border-radius:3px;
+  background-color: rgb(16, 3, 43);
+  color:#fff;
+  margin-right:15px;
+  font-size:1.13em;
+  box-shadow:0px 4px 4px  rgba(0,0,0,0.5);
+}
+.download span{
+  font-weight:100 !important;
+  color: #eee !important;
+ font-size:0.65em !important; 
+}
+
+h1{
+  font-size:2.5em;
+  font-weight:400;
+
+}
+
+.active{
+  animation-name:move;
+  animation-duration:3s;
+  animation-iteration-count:infinite;
+  transition: ease-in-out 0.3s;
+}
+@keyframes move {
+  from {transform:translateX(500px)}
+  to {transform:translateX(0px)}
+} 
+.cardImg
+{
+  height:60% !important;
+  display:block;
+
+}
+/* Payment section */
+
+/* More Info Section */
+/* Signup */
+.signUp{
+  position:relative;
+  margin-top:50px;
+  margin-bottom:10px;
+  width:90%;
+  background-color: rgb(17, 25, 253);
+  display:flex;
+  margin-left:auto;
+  margin-right:auto;
+  padding:40px 10px;
+  justify-content: space-evenly;
+  align-items: center;
+  border-radius:10px;
+  flex-direction:column;
+  box-shadow:5px 5px 20px rgba(12, 20, 253,0.75);
+
+}
+.signUp h3{
+  font-size: 2.45em;
+  color:#fff !important;
+
+}
+input
+{
+  padding:20px 100px;
+  border-radius:7px;
+  color:#fff !important;
+  border:none;
+  outline:none;
+  font-size:1.2rem;
+  background-color: rgba(255,255,255,0.35);
+  height:20px;
+ margin-left:auto;
+  display:block;
+  max-width:58%;
+  width:50%;
+ 
+
+}
+.signUp button {
+  margin-top:20px;
+}
+::placeholder{
+  color:#fff;
+  text-align: left;
+  border:1px solid #000;
+  width:100%;
+}
+@media (min-width:1000px)
+{
+  .signUp button{
+    position:absolute;
+    right:130px;
+    top:109px;
+    margin-top:0px !important;
+  }
+  .signUp
+  {
+    flex-direction:row !important;
+    align-items:center;
+  }
+  input{
+    width:58% !important;
+  }
+}
+
+@media (min-width:800px){
+  .heroSection{
+    flex-direction:row;
+    height:100vh !important;
+  }
+  .leftSection img{
+    display:block;
+  }
+  .cardContainer{
+    grid-template-columns:repeat(2,1fr); 
+  }
+  .card{
+    width:90% !important;
+  }
+  .navItem{
+    display:block;
+  }
+  .navButton
+  {
+    display:block;
+  }
+  .menu{
+    display: none;
+  }
+  .rightSection{
+    text-align:left;
+  }
+  .leftSection img{
+    width:100% !important;
+    height:90% !important;
+  }
+  .infoSection{
+    margin-top:150px !important;
+  }
+  .infoText{
+    text-align:left !important;
+  }
+ 
+}
