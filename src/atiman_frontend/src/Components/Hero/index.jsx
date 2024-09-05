@@ -5,8 +5,10 @@ import "./Hero.css";
 import thumbnail1 from "../../Assets/Home/thumbnail1.png";
 import thumbnail2 from "../../Assets/Home/thumbnail2.png";
 import thumbnail3 from "../../Assets/Home/thumbnail3.png";
-import wura_video from "../../Assets/Home/atiman-reinvented.mp4";
+// import wura_video from "../../Assets/Home/atiman-reinvented.mp4";
 import heroData from "../../Data/heroData";
+import YouTube from 'react-youtube';
+
 function Hero() {
   const [video, setVideo] = useState({
     0: false,
@@ -78,11 +80,17 @@ function Hero() {
 
   const heading = "Your Friendly Resource Center for Psychological Care";
   const thumbnails = [thumbnail1, thumbnail2, thumbnail3];
-  // const download =[
-  //   {action:"Available Soon",button_store:"PlayStore"},
-  //   {action:"Available Soon",button_store:"AppStore"}
-  // ]
-  const videos = [wura_video];
+  const opts = {
+    height: '600',
+    width: '542',
+    playerVars: {
+      // https://developers.google.com/youtube/player_parameters
+      autoplay: 1,
+      loop: 1,
+      playsinline: 1, 
+    },
+  };
+  const videoId = ['ZIsX1dreQLw'];
   const { poster, author, quote, username, backgroundColor } = heroData[index];
   return (
    
@@ -146,21 +154,15 @@ function Hero() {
               </motion.figure>
             ) : (
               <div className="hero__section__poster">
-                <motion.video
-                  autoPlay
-                  playsInline
-                  loop
+                <motion.div
                   key={index}
                   animate={{ scale: 1, opacity: 1 }}
                   transition={{ duration: 0.35, stiffness: 100 }}
                   exit={{ x: "0vh", scale: 0.5, opacity: [0.5, 0.5, 0] }}
                   initial={{ scale: 0.5, opacity: 0 }}
                 >
-                  <source
-                    src={videos[index]}
-                    type="video/mp4"
-                  />
-                </motion.video>
+                  <YouTube videoId={videoId} opts={opts} />
+                </motion.div>
                 <div className="hero__play--button">
                   <FaStopCircle
                     size="30"

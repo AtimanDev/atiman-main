@@ -6,10 +6,9 @@ function Perks(){
     <section className="perks__section">
       <div className="perks__card__container">
         <div className="perks__text">
-          <h1>Experience our Healing Method</h1>
+          <h1>About ATIMAN</h1>
           <p>
-            Plan towards your dream home, fund your kid's education, travel the
-            world , all in one app.
+          Our Mission, Vision, and the Story Behind Our Center.
           </p>
         </div>
         {CardData.map((item, index) =>  <Card key={`${item.heading1 + index}`} data={item} index={index} />)}

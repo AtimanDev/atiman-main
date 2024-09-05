@@ -6,16 +6,16 @@ import pic5 from '../Assets/Card/savings.png';
 const CardData =[
     {
         heading3:"Psychotherapy",
-        heading1: "Healing through Sharing",
-        para: "Stay motivated and have fun saving with friends and family",
+        heading1: "Talk Through Your Thoughts",
+        para: "Experience a safe space to explore your emotions and thoughts with our expert therapists, helping you navigate life's challenges",
         art:"Join A circle",
         color:"#fff6ee",
         img: pic1
     },
     {
         heading3:"Counseling",
-        heading1: "Guidance for Life's Challenges",
-        para: "Find clarity and support through compassionate, expert advice.",
+        heading1: "Guidance When You Need It",
+        para: "Receive personalized advice and support tailored to your specific concerns, empowering you to make positive changes in your life.",
         art:"Seek Support Now",
         color:"#f4f6ff",
         img: pic5
@@ -24,7 +24,7 @@ const CardData =[
     {
         heading3:"Psychopharmacology",
         heading1: "Medication with Care",
-        para: "BWork with our specialists to find the right medication that complements your therapy.",
+        para: "Work with our specialists to find the right medication that complements your therapy, enhancing your overall mental well-being.",
         art:"Talk to our Friendly Specialist",
         color:"#fdf3f6",
         img: pic3
