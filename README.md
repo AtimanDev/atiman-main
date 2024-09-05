@@ -6,7 +6,7 @@ To get started, you might want to explore the project directory structure and th
 
 To learn more before you start working with `Atiman`, see the following documentation available online:
 
-- [Video Presentation](https://youtube.com/)
+- [Video Presentation](https://www.youtube.com/watch?v=ZIsX1dreQLw)
 - [Canister Site](https://iqk7k-lqaaa-aaaan-qmyfq-cai.icp0.io/)
 
 If you want to start working on your project right away, you might want to try the following commands:
